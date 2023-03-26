@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
  
-const url = ''
+const url = 'mongodb+srv://Rohit:rohit@cluster0.vrcqw6n.mongodb.net/?retryWrites=true&w=majority'
 const connection=async()=>{
     mongoose.set('strictQuery', false);
 

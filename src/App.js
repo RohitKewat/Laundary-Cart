@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Order from './Components/Orders/order';
 
 function App() {
   return (
         <>
-          Working react application
+          <Order/>
+        
         </>
   );
 }
