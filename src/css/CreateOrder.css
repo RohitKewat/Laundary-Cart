@@ -1,0 +1,25 @@
+#title{
+    display: inline;
+    
+}
+#title-bar{
+    margin-bottom: 10px;
+    
+}
+#product-type,#quantity,#wash-type,#price{
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+#product-type{
+    width:15%;
+}
+#quantity{
+    width:15%;
+}
+#wash-type{
+    width:25%;
+}
+#price{
+    width:15%;
+}

@@ -1,14 +1,20 @@
 // import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import "./App.css";
+import CreateOrder from "./components/CreateOrder";
+//---------------------------------------------
+
 
 function App() {
-  return (
-        <>
-          Working react application
-
-          <h1>p2 is here</h1>
-        </>
-  );
+	return (
+		<>
+			<BrowserRouter>
+				<Routes>
+					<Route index element={<CreateOrder />} />
+				</Routes>
+			</BrowserRouter>
+		</>
+	);
 }
 
 export default App;
