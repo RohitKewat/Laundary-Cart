@@ -97,7 +97,7 @@ font: normal normal normal 17px/27px Open Sans;
 letter-spacing: 0.6px;
 color: #77838F;
 opacity: 1;
-margin-top: 50px;
+margin-top: 30px;
 margin-left: 130px;
 border: none;
 border-bottom: 2px solid #93999f;
@@ -134,11 +134,45 @@ font: normal normal normal 17px/27px Open Sans;
 letter-spacing: 0.6px;
 color: #77838F;
 opacity: 1;
-margin-top: 50px;
+margin-top: 30px;
 margin-left: 130px;
 border: none;
 border-bottom: 2px solid #93999f;
 width: 400px;
 outline: none;
 letter-spacing: 2px;
+}
+#input-sign-lable{
+    text-align: left;
+    font: normal normal 600 12px/15px Open Sans;
+    letter-spacing: 0.42px;
+    color: #49519b;
+    opacity: 1;
+    margin-left: 130px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    width: 150px;
+}
+.input-sign{
+    text-align: left;
+    font: normal normal 600 17px/27px Open Sans;;
+letter-spacing: 0.6px;
+color: #424548;
+opacity: 1;
+margin-top: 40px;
+margin-left: 130px;
+border: none;
+border-bottom: 2px solid #93999f;
+width: 400px;
+outline: none;
+letter-spacing: 2px;
+}
+#alert-msg{
+    text-align: left;
+font: italic normal 600 12px/27px Open Sans;
+letter-spacing: 0.42px;
+color: #EF1A1A;
+opacity: 1;
+margin-left: 350px;
+margin-top: 0;
 }
