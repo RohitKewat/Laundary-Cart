@@ -1,22 +1,23 @@
 
-import './App.css';
-import BottomBox from './components/BottomBox';
-import Navbar from './components/Navbar';
-import RegisterSection from './components/RegisterSection';
-import SignInSection from './components/SignInSection';
 
-import SocialHandle from './components/SocialHandle';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ContextProvider } from './components/UserContext';
+import Register from './Register';
+import Signin from './Signin';
+import User from './User';
 function App() {
   return (
         <>
-       <ContextProvider>
-       <Navbar/>
-       </ContextProvider> 
-       {/* <RegisterSection/> */}
-       <SignInSection/>
-         <SocialHandle/>
-          <BottomBox/>
+       <BrowserRouter>
+       <Routes>
+        <Route path='/' element={<Register/>}/>
+        <Route path='/signin' element={<Signin/>}/>
+        
+        <Route path='/user' element={<User/>}/>
+        
+       </Routes>
+       </BrowserRouter>
+       
         </>
   );
 }
