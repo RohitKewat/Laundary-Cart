@@ -11,7 +11,7 @@ export default function(){
         <span id='main-body'>
             <div id='title-bar'>
                 <h2 id='title'>Create Order</h2>
-                <input type='text' />
+                <input id='search' type='text' />
             </div>
             <div id='headings-bar'>
                 <h2 id='product-type'>Product Types</h2>

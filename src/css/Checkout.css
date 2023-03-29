@@ -29,15 +29,65 @@
 
 #store-details{
     background-color: #F4F9FF;
-
+    height: 150px;
+}
+#store-add{
+    margin-top: 25px;
+    margin-left: 12px;
+}
+#store-tel{
+    margin-top: 25px;
+    margin-left: 12px;
 }
 
 #add-select{
     background-color: #F4F9FF;
+    /* margin-top: 12px; */
     border: 1px solid #F4F9FF;
     border-bottom: 1px solid #3E3F40;
 }
+#order-details{
+    margin-top:10px;
+    margin-left:10px;
+}
 
+#list-row{
+    margin-left: 5px;
+    border-bottom: 1px solid #3E3F40;
+}
+#list-name{
+    display: inline;
+    margin-right: 150px;
+}
+#eq-row{
+    margin-right: 90px;
+}
+#type-list{
+    margin-right: 90px;
+}
+
+#tot{
+    font-size: 20px;
+    color: #39418a;
+}
+
+#subtotal{
+    display: block;
+    font-size: 20px;
+    
+}
+#delivery-charges{
+    display: inline;
+    font-size: 20px;
+    
+}
+#final-total{
+    text-align: right;
+    background-color: #39418a;
+    color: #F4F9FF;
+    position: relative;
+    top: 40px;
+}
 
 #confirm-order-btn-disabled{
     background: #a6ace5 0% 0% no-repeat padding-box;
@@ -45,6 +95,9 @@
     border: 2px solid #a6ace5;
     opacity: 1;
     color: whitesmoke;
+    position: relative;
+    top: 140px;
+    left: 30px;
 }
 
 #confirm-order-btn{
@@ -54,9 +107,19 @@
     opacity: 1;
     color: whitesmoke;
     border: 2px solid #5861AE;
+    position: relative;
+    top: 140px;
+    left: 30px;
+    width: 125px;
+    height: 35px;
+    font-size: 18px;
 
 }
-
+#user-address{
+    position: relative;
+    top: 85px;
+    left: 12px;
+}
 /* #add-option{
     border: 1px solid #898c8f;
     border-radius: 4px;
@@ -72,6 +135,10 @@
 #add-details{
     position: relative;
     
+}
+#add-list{
+    position: relative;
+    top: 15px;
 }
 
 #add-new-address{

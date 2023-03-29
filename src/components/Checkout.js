@@ -73,6 +73,9 @@ export default function (props) {
       ];
     });
   }, []);
+  
+
+  
 
   const handleChange = (selectedOption) => {
     setSelectedAdd((e) => e + selectedOption.address);
@@ -87,18 +90,13 @@ export default function (props) {
         storeAddress: selectedAdd,
         storePhoneNo: selectedTel,
         storeLocation: selectedLoc,
-        city: selectedAdd.slice(13,selectedAdd.length)
+        city: selectedAdd.slice(13,selectedAdd.length),
     });
     console.log(orders);
   },[selectedAdd,selectedLoc,selectedTel]);
   
   const postOrder = () => {
-    // setOrders({
-    //   ...orders,
-    //   storeAddress: selectedAdd,
-    //   storePhoneNo: selectedTel,
-    //   storeLocation: selectedLoc,
-    // });
+    
     navigate("/orders");
     return fetch("http://localhost:5000/order", {
       method: "POST",
@@ -112,18 +110,20 @@ export default function (props) {
     
   };
 
+  
+
   return (
     <div id="checkout">
       <div id="title-checkout">
         <h1 id="summary">Summary</h1>
-        <button id="close" onClick={() => (props.show = !props.show)}>
+        <button id="close" onClick={() => window.location.reload(true)}>
           X
         </button>
       </div>
       <div id="store-details">
-        <Select options={stores} onChange={handleChange} autoFocus={true} />
-        {selectedAdd && <>Address- {selectedAdd}</>}
-        {selectedTel && <>Telephone- {selectedTel}</>}
+        <Select id='add-select' options={stores} onChange={handleChange} autoFocus={true} />
+        {selectedAdd && <div id="store-add"><b>Store Address-</b> {selectedAdd}</div>}
+        {selectedTel && <div id="store-tel"><b>Telephone-</b> {selectedTel}</div>}
       </div>
       <div id="order-details">
         <h4 id="order-details-title">Order Details</h4>
@@ -142,7 +142,7 @@ export default function (props) {
                   })}
                 </span>
                 <span id="eq-row">
-                  {e.quantity}X{e.price}=
+                  <b>{e.quantity}X{e.price}=</b>
                 </span>
                 <span id="tot">{e.total}</span>
               </div>
@@ -159,9 +159,9 @@ export default function (props) {
           {users.map((user) => {
             return (
               <span>
-                {user.addresses.map((add) => {
+                {user.addresses.map((add,idx) => {
                   return (
-                    <div id="add-option">
+                    <div id="add-option" >
                       <div>
                         <b>{add.stateName}</b>
                       </div>
@@ -187,7 +187,7 @@ export default function (props) {
             Confirm
           </button>
         )}
-        {/* <h1>{orders.storeAddress}</h1> */}
+        
       </div>
     </div>
   );

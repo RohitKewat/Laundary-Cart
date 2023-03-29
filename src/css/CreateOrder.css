@@ -2,6 +2,10 @@
     display: inline;
     
 }
+#search{
+    position: relative;
+    left: 580px;
+}
 #main-body{
     position: relative;
     bottom: 637px;
