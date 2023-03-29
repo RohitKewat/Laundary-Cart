@@ -40,7 +40,7 @@ export default function() {
     
     // here, the product db is being fetched via get request from app.js express endpoint
     const fetchData = () => {
-        return fetch("http://localhost:5000/products")
+        return fetch("https://order-server-iamst316.onrender.com/products")
         .then((response) => response.json())
         .then((data) => setProduct(data));
     }

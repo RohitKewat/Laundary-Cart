@@ -15,14 +15,16 @@ export default function (props) {
   const date = `${current.getDate()}/${
     current.getMonth() + 1
   }/${current.getFullYear()}`;
-
+  // let time = `${current.getDate()}/${
+  //   current.getMonth() + 1
+  // }/${current.getFullYear()}`;
   const fetchData = () => {
-    return fetch("http://localhost:5000/store")
+    return fetch("https://order-server-iamst316.onrender.com/store")
       .then((response) => response.json())
       .then((data) => setStore(data));
   };
   const fetchUser = () => {
-    return fetch("http://localhost:5000/users")
+    return fetch("https://order-server-iamst316.onrender.com/users")
       .then((response) => response.json())
       .then((data) => {
         setUsers(data);
@@ -98,7 +100,7 @@ export default function (props) {
   const postOrder = () => {
     
     navigate("/orders");
-    return fetch("http://localhost:5000/order", {
+    return fetch("https://order-server-iamst316.onrender.com/order", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
