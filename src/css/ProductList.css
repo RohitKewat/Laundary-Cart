@@ -20,6 +20,10 @@
     top: -80px;
     left: 212px;
 }
+#btns{
+    position: relative;
+    bottom: 5px;
+}
 
 #reset-btn{
     color: #5861AE;
@@ -111,4 +115,21 @@
     opacity: 1;
     background-color: #5861AE;
     color: white;
+}
+
+#add-btn{
+    position: relative;
+    top: -120px;
+    left: 865px;
+    width: 6%;
+    /* border: 2px solid red; */
+    border: 1px solid #5861AE;
+    border-radius: 4px;
+    opacity: 1;
+    background-color: #5861AE;
+    color: white;
+    width: 61px;
+    height: 32px;
+    cursor: pointer;
+    margin-right: 2px;
 }

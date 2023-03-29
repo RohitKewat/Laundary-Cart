@@ -54,7 +54,7 @@ app.post("/order",async (req,res)=>{
     res.send(order);
 });
 
-//------------------this fetches the orders that have been placed-----------
+//------------------this fetches the orders that have been placed/created-----------
 app.get("/order",async (req,res)=>{
     const list = await orderModel.find();
     res.send(list);

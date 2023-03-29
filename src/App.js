@@ -2,6 +2,7 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import "./App.css";
 import CreateOrder from "./components/CreateOrder";
+import OrderList from "./components/OrderList";
 //---------------------------------------------
 
 
@@ -11,6 +12,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route index element={<CreateOrder />} />
+					<Route path="/orders" element={<OrderList />} />					
 				</Routes>
 			</BrowserRouter>
 		</>

@@ -2,6 +2,11 @@
     display: inline;
     
 }
+#main-body{
+    position: relative;
+    bottom: 637px;
+    left:100px;
+}
 #title-bar{
     margin-bottom: 10px;
     

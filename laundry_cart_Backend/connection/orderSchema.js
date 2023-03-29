@@ -5,20 +5,31 @@
 const mongoose = require("mongoose");
 //it will have items, totalprice, quantity, orderDate
 
-let orderSchema = new mongoose.Schema({
+const orderSchema = new mongoose.Schema({
     items: [
         {
             productName: String,
             quantity: Number,
+            washType : Array,
             price: Number,
-            
         }
     ],
+    userAddress: 
+	    {
+    	    stateName:String,
+    	    district:String,
+    	    pincode:Number,
+    	    address:String
+	    }
+    ,
+    orderStatus :String,
+    storePhoneNo :String,
+    city :String,
     userId: String,
-    userAddress: String,
+    storeAddress: String,
     billAmt: Number,
-    storeName: String,
-    orderDate: String,
+    storeLocation: String,
+    orderDate: String
 });
 
 exports.orderSchema = orderSchema;

@@ -6,8 +6,8 @@ import '../css/CreateOrder.css'
 import ProductList from './ProductList';
 export default function(){
     return(<>
-        {/* <Header /> */}
-        {/* <Navbar /> */}
+        <Header />
+        <Navbar />
         <span id='main-body'>
             <div id='title-bar'>
                 <h2 id='title'>Create Order</h2>
@@ -21,7 +21,7 @@ export default function(){
             </div>
             <ProductList />
         </span>
-        {/* <Footer /> */}
+        <Footer />
     </>)
 }
 
