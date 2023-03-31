@@ -1,0 +1,37 @@
+#title{
+    display: inline;
+    
+}
+#main-body{
+    position: absolute;
+    left: 85px;
+    bottom: -105px;
+    width: 105%;
+}
+#title-bar{
+    margin-bottom: -10px;
+    margin-top: 10px;
+    
+}
+#search-bar{
+    position: relative;
+    left: 600px;
+}
+
+#product-type,#quantity,#wash-type,#price{
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+#product-type{
+    width:15%;
+}
+#quantity{
+    width:15%;
+}
+#wash-type{
+    width:25%;
+}
+#price{
+    width:15%;
+}
